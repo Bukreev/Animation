@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.lesson3.bukreevei.animation.R;
+
 
 public class AnimateView extends FrameLayout {
 
@@ -17,7 +19,7 @@ public class AnimateView extends FrameLayout {
 
     public AnimateView(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        LayoutInflater.from(context).inflate(R.layout.animate_lock);
+        LayoutInflater.from(context).inflate(R.layout.animate_lock, this);
         viewById = findViewById(R.id.image_animated);
         animateImageView(viewById);
     }
